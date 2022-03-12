@@ -3,7 +3,7 @@ dotfiles são arquivos de configuração típicos dos sistemas unix-like, o `.` 
 # "Instalação"
 - clone o repositório na sua pasta home
 - crie os links simbólicos na pasta home
-    - recomendo o GNU stow (pacman -S stow ou apt install stow)
+    - recomendo o GNU stow (`pacman -S stow` ou `apt install stow`)
 
 ```bash
 git clone https://github.com/ViniciusHansen/.dotfiles.git
