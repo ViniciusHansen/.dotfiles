@@ -1,0 +1,38 @@
+separator_block_width=15
+markup=none
+
+[eyedropper]
+command=~/.config/i3blocks/eyedropper/eyedropper
+full_text=<span foreground="#ffffff"> </span>
+instance=#ffffff
+markup=pango
+CLIPBOARD=true
+
+[bandwidth]
+command=~/.config/i3blocks/bandwidth/bandwidth
+interval=5
+INTERFACE=enp3s0
+
+[volume-pipewire]
+command=~/.config/i3blocks/volume-pipewire/volume-pipewire
+interval=persist
+SUBSCRIBE=1
+USE_ALSA_NAME=1
+
+[arch_update]
+command=checkupdates | wc -l
+interval=once
+label=  :
+
+[ram]
+command=echo -n '   RAM '; ~/.config/i3blocks/memory/memory | grep -E -o '^[0-9]+.[0-9]G'
+interval=30
+
+[disk-home]
+command=echo -n '   / '; df -h -l --output='used' "$HOME" | grep -E -o '[0-9]+G'
+interval=30
+
+[time]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=5
+
