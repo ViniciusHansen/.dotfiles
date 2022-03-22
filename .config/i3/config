@@ -8,14 +8,13 @@ font pango:"Source Code Pro" 8
 #font pango:DejaVu Sans Mono 8
 
 # auto run
-exec_aways nitrogen --restore
 exec elisa
 exec discord
 exec qbittorrent
 exec flameshot
 exec syncthing
 exec --no-startup-id dunst
-
+exec --no-startup-id nitrogen --restore
 
 # remove window titiles
 default_border pixel 1
