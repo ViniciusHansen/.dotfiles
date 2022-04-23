@@ -10,7 +10,7 @@ font pango:"Source Code Pro" 8
 # auto run
 exec elisa
 exec discord
-exec qbittorrent
+#exec qbittorrent
 exec flameshot
 exec syncthing
 exec --no-startup-id dunst
@@ -23,6 +23,7 @@ default_floating_border pixel 1
 # assign specific apps to specift workspaces
 assign [class="discord"] 2
 assign [class="elisa"] 3
+assign [class="steam"] 4
 
 #i3blocks binds
 #bindsym XF86AudioLowerVolume $exec pactl set-sink-volume 0 -5%

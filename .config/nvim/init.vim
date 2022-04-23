@@ -39,12 +39,14 @@ set incsearch               " incremental search
 filetype plugin indent on   "allow auto-indenting depending on file type
 filetype plugin on
 
-
+" eu uso vim-plug: https://github.com/junegunn/vim-plug
 call plug#begin()
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
+Plug 'https://github.com/jiangmiao/auto-pairs' " auto completar (), [], {}
 call plug#end()
+
 
 
 " --- Just Some Notes ---
