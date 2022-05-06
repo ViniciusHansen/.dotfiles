@@ -21,6 +21,7 @@ default_border pixel 1
 default_floating_border pixel 1
 
 # assign specific apps to specift workspaces
+assign [class="brave"] 1
 assign [class="discord"] 2
 assign [class="elisa"] 3
 assign [class="steam"] 4
