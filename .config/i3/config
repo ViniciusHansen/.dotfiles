@@ -8,7 +8,7 @@ font pango:"Source Code Pro" 8
 #font pango:DejaVu Sans Mono 8
 
 # auto run
-exec elisa
+#exec elisa
 exec discord
 #exec qbittorrent
 exec flameshot
