@@ -9,10 +9,10 @@ font pango:"Source Code Pro" 8
 
 # auto run
 #exec elisa
-exec discord
+#exec discord
 #exec qbittorrent
 exec flameshot
-exec syncthing
+#exec syncthing
 exec --no-startup-id dunst
 exec --no-startup-id nitrogen --restore
 

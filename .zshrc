@@ -32,10 +32,6 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Aliases
-# dirs
-alias \
-    u="cd ~/UDESC" \
-    i3c="nvim .config/i3/config"
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
 	cp="cp -iv" \
@@ -66,8 +62,8 @@ alias \
 alias \
     pac="sudo pacman" \
     ...="../.." \
-    g="git"
-
+    g="git" \
+    sdn="shutdown now"
 # PATH
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
