@@ -27,9 +27,6 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# Edit line in vim with ctrl-e:
-autoload edit-command-line; zle -N edit-command-line
-bindkey '^e' edit-command-line
 
 # Aliases
 # Verbosity and settings that you pretty much just always are going to want.
@@ -41,8 +38,7 @@ alias \
 	mkd="mkdir -pv" \
 	ytdl="yt-dlp --add-metadata -i" \
 	ytdla="ytdl -f 'ba' --audio-format mp3 --embed-thumbnail" \
-    spotdl="spotdl --output-format opus" \
-	ffmpeg="ffmpeg -hide_banner"
+    spotdl="spotdl --output-format opus"
 
 # Colorize commands when possible.
 alias \
@@ -55,14 +51,16 @@ alias \
 # dumb aliases.
 alias \
     ascii="figlet" \
-    btw="neofetch" \
-    uwu="uwufetch"
+    btw="neofetch"
 
 # These common commands are just too long! Abbreviate them.
 alias \
     pac="sudo pacman" \
     ...="../.." \
     g="git" \
+    gco="git commit -am" \
+    gst="git status" \
+    gp="git push" \
     sdn="shutdown now"
 # PATH
 if [ -d "$HOME/.bin" ] ;
@@ -77,18 +75,10 @@ if [ -d "$HOME/Applications" ] ;
     then PATH="$HOME/.local/share/applications:$PATH"
 fi
 
-if [ -d "$HOME/.flutter/flutter/bin" ] ;
-    then PATH="/home/hnz/.flutter/flutter/bin:$PATH"
-fi
 
 # Export Shell Variables
-export TERM="alacritty"
-export EDITOR="nvim"
+export EDITOR="vim"
 
 # syntax highlighting
 source /home/hnz/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
