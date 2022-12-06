@@ -37,8 +37,7 @@ alias \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
 	ytdl="yt-dlp --add-metadata -i" \
-	ytdla="ytdl -f 'ba' --audio-format mp3 --embed-thumbnail" \
-    spotdl="spotdl --output-format opus"
+	ytdla="ytdl -f 'ba' --audio-format mp3 --embed-thumbnail"
 
 # Colorize commands when possible.
 alias \
